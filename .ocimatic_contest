@@ -1,1 +1,6 @@
-{}
+{
+    "tasks": [
+        "grilla",
+        "edificios"
+    ]
+}
