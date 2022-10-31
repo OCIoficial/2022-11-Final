@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+*.log
+tmp/
+*.pdf
+.auctex-auto
+logo-eps-converted-to.pdf
+statement.synctex.gz
