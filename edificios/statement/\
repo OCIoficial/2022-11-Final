@@ -1,5 +1,6 @@
 \documentclass{oci}
 \usepackage[utf8]{inputenc}
+\usepackage{lipsum}
 
 \title{Parkour}
 
@@ -17,12 +18,12 @@
 
   Todos los participantes deben comenzar en el último piso de la primera torre, y deben llegar al primer piso de la última. Una vez allí, la competencia se dará por terminada, y quienes hayan logrado completarla exitosamente serán trasladados al campamento, donde serán entrenados para participar en la competencia mundial de parkour con cohetes.
 
-  Además de ser un excelente deportista, Sebastián es una persona muy preocupada por el medio ambiente, por lo que desea reducir su huella de carbono minimizando la cantidad de cohetes que utiliza. Para lograr esto, decidió pedirte a ti que diseñes un programa que le permita encontrar la mínima cantidad de cohetes necesita para llegar al final del camino. ¿Podrás ayudarlo a cumplir su meta?
+  Además de ser un excelente deportista, Sebastián es una persona muy preocupada por el medio ambiente, por lo que desea reducir su huella de carbono minimizando la cantidad de cohetes que utiliza. Para lograr esto, decidió pedirte a ti que diseñes un programa que le permita encontrar la mínima cantidad de cohetes que necesita para llegar al final del camino. ¿Podrás ayudar a Sebastián a cumplir su meta?
 
 \end{problemDescription}
 
 \begin{inputDescription}
-  La primera linea de entrada contiene dos enteros $N$ y $M$ ($2 \leq N, M \leq 1000$) correspondientes respectivamente a la cantidad de torres y la cantidad de pisos.
+  La primera linea de entrada contiene dos enteros $N$ y $M$ ($2 \leq N, M \leq 10000$) correspondientes respectivamente a la cantidad de torres y la cantidad de pisos.
 
   A continuación, vienen $N$ líneas. La i-ésima línea describe el estado de los pisos de la i-ésima torre. Primero, contiene un entero $P$ ($1 \leq P \leq M$), la cantidad de pisos seguros. Luego, le siguen $P$ enteros $p$ ($0 \leq p < M$), el número de cada piso accesible.
 
