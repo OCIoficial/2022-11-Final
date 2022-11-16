@@ -34,11 +34,13 @@ int dijkstra(ii inicio, ii fin, vector<vector<int>> &torres) {
 
             if (piso < nuevopiso) {
                 if ((distancia + (nuevopiso - piso)) < distancias[torre+1][nuevopiso]) {
+                    distancias[torre+1][nuevopiso] = distancia + (nuevopiso - piso);
                     pq.push({distancia + (nuevopiso - piso), torre+1, nuevopiso});
                 }
             }
             else {
                 if (distancia < distancias[torre+1][nuevopiso]) {
+                    distancias[torre+1][nuevopiso] = distancia;
                     pq.push({distancia, torre+1, nuevopiso});
                 }
             }
