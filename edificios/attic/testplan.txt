@@ -28,20 +28,21 @@
 # passed as the first argument meaning that the rest of the arguments are "shifted" in one position.
 
 [Subtask 1]
-  # Use sample data as test
-  sample ; copy statement/sample-1.in
-  sample ; copy statement/sample-2.in
 
-  # Manual test case
-  manual ; copy attic/manual-1.in
+  sample-1 ; copy statement/sample-1.in
 
-  # Random tests
-  rand ; random.cpp 10 100
-  rand ; random.cpp 100 1000
+  rand-st1 ; gen_random.py 5 5
+  rand-st1 ; gen_random.py 5 5
 
 
 [Subtask 2]
-  # Random tests
-  rand ; random.py 10 20 30
-  rand ; random.py 20 30 40
 
+  sample-2 ; copy statement/sample-2.in
+
+  rand-st2 ; gen_random.py 1000 2
+  rand-st2 ; gen_random.py 1000 2
+
+[Subtask 3]
+
+  rand-st3 ; gen_random.py 1000 1000
+  rand-st3 ; gen_random.py 1000 1000
