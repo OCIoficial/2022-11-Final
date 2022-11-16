@@ -39,10 +39,10 @@
 
   sample-2 ; copy statement/sample-2.in
 
-  rand-st2 ; gen_random.py 1000 2
-  rand-st2 ; gen_random.py 1000 2
+  rand-st2 ; gen_random.py 100 2
+  rand-st2 ; gen_random.py 100 2
 
 [Subtask 3]
 
-  rand-st3 ; gen_random.py 1000 1000
-  rand-st3 ; gen_random.py 1000 1000
+  rand-st3 ; gen_random.py 100 100
+  rand-st3 ; gen_random.py 100 100
