@@ -33,8 +33,8 @@
   en línea}, es decir, cuatro celdas consecutivas de forma
   vertical, horizontal o diagonal.
   %
-  En cada turno, un jugador puede marcar cualquier celda dentro
-  de la grilla.
+  En cada turno, un jugador puede marcar cualquier celda vacía
+  dentro de la grilla.
   %
   El juego finaliza inmediatamente cuando alguno de los jugadores
   logra formar cuatro en línea.
@@ -44,44 +44,41 @@
   cuatro en línea.
   %
   La siguiente figura muestra una posible lista de jugadas
-  en una grilla de $5\times 5$ que resultan en el primer jugador
+  en una grilla de $4\times 4$ que resultan en el primer jugador
   victorioso al combinar cuatro \texttt{O}'s de forma diagonal.
   \begin{center}
-  \begin{minipage}{0.8\textwidth}
-  \begin{tikzpicture}[scale=0.5]
-    \draw (0, 0) grid (5, 5);
+  \begin{tikzpicture}[scale=0.58]
+    \draw (0, 0) grid (4, 4);
     \node at (1.5, 1.5) {\texttt{O}};
   \end{tikzpicture}
-  \begin{tikzpicture}[scale=0.5]
-    \draw (0, 0) grid (5, 5);
+  \begin{tikzpicture}[scale=0.58]
+    \draw (0, 0) grid (4, 4);
     \node at (1.5, 1.5) {\texttt{O}};
     \node at (2.5, 1.5) {\texttt{X}};
   \end{tikzpicture}
-  \begin{tikzpicture}[scale=0.5]
-    \draw (0, 0) grid (5, 5);
+  \begin{tikzpicture}[scale=0.58]
+    \draw (0, 0) grid (4, 4);
     \node at (1.5, 1.5) {\texttt{O}};
     \node at (2.5, 1.5) {\texttt{X}};
     \node at (0.5, 0.5) {\texttt{O}};
   \end{tikzpicture}
-  \begin{tikzpicture}[scale=0.5]
-    \draw (0, 0) grid (5, 5);
+  \begin{tikzpicture}[scale=0.58]
+    \draw (0, 0) grid (4, 4);
     \node at (1.5, 1.5) {\texttt{O}};
     \node at (2.5, 1.5) {\texttt{X}};
     \node at (0.5, 0.5) {\texttt{O}};
     \node at (2.5, 0.5) {\texttt{X}};
   \end{tikzpicture}
-  \begin{tikzpicture}[scale=0.5]
-    \draw (0, 0) grid (5, 5);
+  \begin{tikzpicture}[scale=0.58]
+    \draw (0, 0) grid (4, 4);
     \node at (1.5, 1.5) {\texttt{O}};
     \node at (2.5, 1.5) {\texttt{X}};
     \node at (0.5, 0.5) {\texttt{O}};
     \node at (2.5, 0.5) {\texttt{X}};
     \node at (2.5, 2.5) {\texttt{O}};
   \end{tikzpicture}
-
-  \vspace{0.2em}
-  \begin{tikzpicture}[scale=0.5]
-    \draw (0, 0) grid (5, 5);
+  \begin{tikzpicture}[scale=0.58]
+    \draw (0, 0) grid (4, 4);
     \node at (1.5, 1.5) {\texttt{O}};
     \node at (2.5, 1.5) {\texttt{X}};
     \node at (0.5, 0.5) {\texttt{O}};
@@ -89,8 +86,8 @@
     \node at (2.5, 2.5) {\texttt{O}};
     \node at (1.5, 2.5) {\texttt{X}};
   \end{tikzpicture}
-  \begin{tikzpicture}[scale=0.5]
-    \draw (0, 0) grid (5, 5);
+  \begin{tikzpicture}[scale=0.58]
+    \draw (0, 0) grid (4, 4);
     \node at (1.5, 1.5) {\texttt{O}};
     \node at (2.5, 1.5) {\texttt{X}};
     \node at (0.5, 0.5) {\texttt{O}};
@@ -100,7 +97,6 @@
     \node at (3.5, 3.5) {\texttt{O}};
     \draw[red] (0.4, 0.4) -- (3.6, 3.6);
   \end{tikzpicture}
-  \end{minipage}
   \end{center}
 
   Luego de terminar el torneo, Romina mira
@@ -118,7 +114,8 @@
 \end{problemDescription}
 
 \begin{inputDescription}
-  La primera línea de la entrada contiene un entero $N$ correspondiente
+  La primera línea de la entrada contiene un entero $N$ ($4\leq N \leq 20$)
+  correspondiente
   al tamaño de la grilla.
   %
   Posteriormente siguen $N$ líneas cada una conteniendo $N$ caracteres.
