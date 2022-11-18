@@ -28,25 +28,37 @@
 # passed as the first argument meaning that the rest of the arguments are "shifted" in one position.
 
 [Subtask 1 - validators/st1.cpp]
-  # Use sample data as test
-  sample ; copy statement/sample-1.in
-  sample ; copy statement/sample-2.in
-
+  
   # Manual test case
-  manual ; copy attic/manual-1.in
+  # manual ; copy attic/manual-1.in
 
   # Random tests
-  rand ; random.cpp 10 100
-  rand ; random.cpp 100 1000
+  rand-st1 ; gen_random.py 1 100 5
+  rand-st1 ; gen_random.py 1 1000 5
 
 
 [Subtask 2 - validators/st2.cpp]
+
+  # Use sample data as test
+  sample ; copy statement/sample-2.in
+
   # Random tests
-  rand ; random.py 10 20 30
-  rand ; random.py 20 30 40
+  rand-st2 ; gen_random.py 2 20 2
+  rand-st2 ; gen_random.py 2 30 2
 
 
 [Subtask 3 - validators/st3.cpp]
 
+  # Random tests
+  rand-st3 ; gen_random.py 2 20 5
+  rand-st3 ; gen_random.py 2 30 5
+
 
 [Subtask 4 - validators/st4.cpp]
+
+  # Use sample data as test
+  sample ; copy statement/sample-1.in
+
+  # Random tests
+  rand-st4 ; gen_random.py 20 20 5
+  rand-st4 ; gen_random.py 20 30 5
