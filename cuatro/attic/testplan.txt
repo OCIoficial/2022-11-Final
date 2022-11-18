@@ -31,17 +31,21 @@
 
   # POSSIBLE
 
-  possible_tie ; possible.py 5 tie
-  possible_tie ; possible.py 4 tie
-  possible_win ; possible.py 5 win
-  possible_win ; possible.py 6 win
-  possible_win ; possible.py 7 win
-  possible_win ; possible.py 8 win
-  possible_win ; possible.py 9 win
-  possible_win ; possible.py 10 win
+  possible_ai_tie ; ai.py 5 tie
+  possible_ai_tie ; ai.py 4 tie
+
+  possible_ai_win ; ai.py 5 win
+  possible_ai_win ; ai.py 6 win
+  possible_ai_win ; ai.py 7 win
+  possible_ai_win ; ai.py 8 win
+  possible_ai_win ; ai.py 9 win
+  possible_ai_win ; ai.py 10 win
 
   possible_7_in_line_row ; copy attic/manual/possible/7_in_line_row.txt
-  possible_row_and_col ; copy attic/manual/possible/row_and_col.txt
+  possible_7_in_line_col; copy attic/manual/possible/7_in_line_col.txt
+  possible_row_and_col ; copy attic/manual/possible/row_and_col_1.txt
+  possible_row_and_col ; copy attic/manual/possible/row_and_col_2.txt
+  possible_row_and_col ; copy attic/manual/possible/row_and_col_3.txt
 
   # IMPOSSIBLE
 
@@ -51,3 +55,10 @@
   impossible_too_many_x ; copy attic/manual/impossible/too_many_x.txt
   impossible_only_o ; copy attic/manual/impossible/only_o.txt
   impossible_only_x ; copy attic/manual/impossible/only_x.txt
+  impossible_x_win_too_early ; copy attic/manual/impossible/x_win_too_early.txt
+
+  impossible_rand ; rand.py 4 impossible
+  impossible_rand ; rand.py 6 impossible
+  impossible_rand ; rand.py 8 impossible
+  impossible_rand ; rand.py 10 impossible
+
