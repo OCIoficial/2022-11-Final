@@ -2,6 +2,7 @@
     "tasks": [
         "grilla",
         "edificios",
-        "cuatro"
+        "cuatro",
+        "reacciones"
     ]
 }

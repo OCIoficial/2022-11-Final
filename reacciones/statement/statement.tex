@@ -1,0 +1,56 @@
+\documentclass{oci}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+\title{Reacciones}
+
+\newcommand{\platform}{Harmony}
+\newcommand{\hero}{Jorge}
+
+\begin{document}
+\begin{problemDescription}
+\platform{} es una conocida plataforma de mensajería instantánea por texto en la que los usuarios pueden comunicarse entre pares o grupos.
+Entre sus muchas características, es posible reaccionar con emojis a los mensajes de otros miembros de las conversaciones.
+Cada miembro puede reaccionar con uno o más emojis a cualquier mensaje, pero solo una vez con cada emoji.
+
+Las reacciones aparecen debajo de los mensajes, de forma horizontal, dispuestos de izquierda a derecha y junto a un contador.
+Si un emoji ya ha sido usado antes, entonces el contador aumenta; si no ha sido antes, se agrega al final con un contador en 1.
+
+\hero{} es un usuario frecuente de \platform{}, y suele recurrir a las reacciones para responder a los mensajes.
+Esto es posible en algunos casos ya que \platform{} tiene emojis por cada letra del abecedario en $k$ colores diferentes.
+
+A \hero{} le gustaría determinar si es posible o no escribir un mensaje con estas reacciones antes de empezar a intentarlo, de lo contrario, podría ocurrir que empiece a formar el mensaje con las reacciones y quede incompleto o a medias, y su reputación en \platform{} se vería afectada.
+
+\end{problemDescription}
+
+\begin{inputDescription}
+La entrada consiste en dos líneas.
+
+La primera línea contiene dos enteros $n$ y $k$ ($1 \le k \le n \le 1\,000\,000$) que corresponden respectivamente al largo del mensaje que \hero{} quiere escribir con emojis y al número de colores (o variantes) que tiene cada letra del abecedario.
+
+La segunda línea contiene $n$ letras del abecedario inglés (es decir, sin la \textbf{ñ}), en minúsculas y sin espacios entre sí.
+\end{inputDescription}
+
+\begin{outputDescription}
+La salida consiste en una sola línea.
+
+Si existe una forma de formar el mensaje, la línea debe contener $n$ enteros $c_i$ ($1 \le c_i \le k$) separados por espacios, donde el $i$-ésimo entero indica el color del que debe ser pintada la $i$-ésima letra del mensaje.
+
+Si no es posible escribir el mensaje, la línea debe contener la palabra \texttt{imposible}.
+\end{outputDescription}
+
+\begin{scoreDescription}
+  \subtask{20}
+  Se probarán varios casos en que $k = 1$.
+  \subtask{30}
+  Se probarán varios casos en que $k = 2$.
+  \subtask{50}
+  Se probarán varios casos sin restricciones adicionales.
+\end{scoreDescription}
+
+\begin{sampleDescription}
+\sampleIO{sample-1}
+\sampleIO{sample-2}
+\end{sampleDescription}
+
+\end{document}
