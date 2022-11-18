@@ -16,9 +16,7 @@ class FourInLine(TwoPlayerGame):
 
         # yapf: disable
         self.pos_dirs = ([((i, 0), (0, 1)) for i in range(N)] +
-                         [((0, j), (1, 0)) for j in range(N)] +
-                         [((i, 0), (1, 1)) for i in range(N)] +
-                         [((0, j), (1, 1)) for j in range(N)])
+                         [((0, j), (1, 0)) for j in range(N)])
         # yapf: enable
 
     def possible_moves(self):

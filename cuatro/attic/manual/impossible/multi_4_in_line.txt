@@ -1,0 +1,7 @@
+6
+XXXX..
+O..O..
+X..O.O
+XO...O
+XO..O.
+X.O..X

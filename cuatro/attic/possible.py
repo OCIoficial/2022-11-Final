@@ -27,11 +27,12 @@ if mode == "tie":
     assert N <= 5, "The chance of a tie on grids larger than 5 is too low"
     while True:
         # give both ais the same intelligence to increase chances for a tie
-        players = [AI_Player(Negamax(3), AI_Player(Negamax(3)))]
+        players = [AI_Player(Negamax(3)), AI_Player(Negamax(3))]
         game = FourInLine(N=N, players=players)
         game.play(verbose=False)
 
         if game.tie():
             break
 
+print(N)
 game.show()
