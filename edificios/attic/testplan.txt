@@ -39,10 +39,16 @@
 
   sample-2 ; copy statement/sample-2.in
 
+  manual-st2 ; copy attic/manual/manual-st2.in
+
   rand-st2 ; gen_random.py 100 2
   rand-st2 ; gen_random.py 100 2
 
 [Subtask 3]
+
+  manual-st3-1 ; copy attic/manual/manual-st3-1.in
+  manual-st3-2 ; copy attic/manual/manual-st3-2.in
+  manual-st3-3 ; copy attic/manual/manual-st3-2.in
 
   rand-st3 ; gen_random.py 100 100
   rand-st3 ; gen_random.py 100 100
