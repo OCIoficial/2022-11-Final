@@ -8,11 +8,11 @@ message = input()
 
 results = []
 
-for i in message:
-    counts[i] += 1
-    if counts[i] > k:
+for glyph in message:
+    counts[glyph] += 1
+    if counts[glyph] > k:
         print("imposible")
         exit(0)
-    results.append(counts[i])
+    results.append(counts[glyph])
 
 print(" ".join(str(result) for result in results))
