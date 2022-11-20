@@ -5,37 +5,73 @@
 
 \begin{document}
 \begin{problemDescription}
-  Tras muchos años de esfuerzo y dedicación, Sebastián finalmente logró clasificar a la fase final de la increíble competencia de parkour con cohetes (ICPC).
+  Tras muchos años de esfuerzo y dedicación, Sebastián finalmente logró
+  clasificar a la fase final de la Increíble Competencia de Parkour con
+  Cohetes (ICPC).
+  %
+  En el último desafío, Sebastián debe arriesgar
+  su vida en la ruta de las torres infernales.
 
-  En el último desafío, los participantes arriesgarán su vida en el camino de las $N$ torres. Allí, los participantes deberán cruzar el camino completo, saltando de torre en torre, evitando morir en el intento.
+  La ruta está compuesta de $N$ torres cada una con
+  $M$ pisos, numerados de abajo hacia arriba entre 0
+  y $M-1$.
+  %
+  Todos los participantes comienzan en el último piso de la primera
+  torre (el piso $M-1$) y para completar la ruta deben saltar de torre
+  en torre hasta alcanzar cualquier piso de la última torre.
 
-  Cada torre contiene $M$ pisos. Para llegar de una torre a la siguiente, Sebastián puede saltar a un piso que esté a la misma o menor altura que el actual, o puede utilizar cohetes para propulsarse hacia un piso más alto, utilizando un cohete por cada piso que asciende.
+  Para llegar de una torre a la siguiente, Sebastián puede saltar a un piso
+  que esté a la misma o menor altura que el actual, o puede utilizar \emph{cohetes}
+  para propulsarse hacia un piso más alto, utilizando un cohete por cada piso que asciende.
+  %
+  Por ejemplo, si Sebastián se encuentra en el piso 5 y desea llegar
+  al piso 3 de la siguiente torre, puede hacerlo sin utilizar cohetes.
+  %
+  Pero si quiere saltar hasta el piso 8 necesitará utilizar 3 cohetes.
 
-  Por ejemplo, si Sebastián se encontrase en el piso 5 de la tercera torre y desease llegar al piso 3 de la cuarta torre, podría hacerlo sin utilizar cohetes. Pero si quisiese saltar hasta el piso 8, necesitaría utilizar 3 cohetes.
+  Esta es una competencia muy extrema, por lo que muchos de los pisos
+  estarán en llamas.
+  %
+  Como Sebastián desea salir vivo de esta, solo saltará a los pisos
+  seguros, es decir, los pisos que no están en llamas.
 
-  Esta es una competencia muy extrema, por lo que muchos de los pisos están en llamas. Como Sebastián desea salir vivo de esta, sólo saltará a los pisos de la torre que sean seguros.
-
-  Todos los participantes deben comenzar en el último piso de la primera torre, y deben llegar a cualquier piso de la última. Una vez allí, la competencia se dará por terminada, y quienes hayan logrado completarla exitosamente serán trasladados al campamento, donde serán entrenados para participar en la competencia mundial de parkour con cohetes.
-
-  Además de ser un excelente deportista, Sebastián es una persona muy preocupada por el medio ambiente, por lo que desea reducir su huella de carbono minimizando la cantidad de cohetes que utiliza. Para lograr esto, decidió pedirte a ti que diseñes un programa que le permita encontrar la mínima cantidad de cohetes necesita para llegar al final del camino. ¿Podrás ayudarlo a cumplir su meta?
+  Además de ser un excelente deportista, Sebastián es una persona muy
+  preocupada por el medio ambiente, por lo que desea reducir su huella
+  de carbono minimizando la cantidad de cohetes que utiliza.
+  %
+  Para lograrlo, le gustaría saber cuál es la mínima cantidad
+  de cohetes que necesita para completar la ruta.
+  %
+  ¿Podrás ayudarlo a cumplir su meta?
 
 \end{problemDescription}
 
 \begin{inputDescription}
-  La primera linea de entrada contiene dos enteros $N$ y $M$ ($2 \leq N, M \leq 100$) correspondientes respectivamente a la cantidad de torres y la cantidad de pisos.
+  La primera línea de entrada contiene dos enteros $N$ y $M$ ($2 \leq N, M \leq 100$)
+  correspondientes respectivamente a la cantidad de torres y la cantidad de pisos.
 
-  A continuación, vienen $N$ líneas. La i-ésima línea describe el estado de los pisos de la i-ésima torre. Primero, contiene un entero $P$ ($1 \leq P \leq M$), la cantidad de pisos seguros. Luego, le siguen $P$ enteros $p$ ($0 \leq p < M$), el número de cada piso accesible.
+  A continuación vienen $N$ líneas.
+  %
+  La i-ésima línea describe el estado de los pisos de la i-ésima torre.
+  %
+  Cada línea comienza con un entero $P$ ($1 \leq P \leq M$) correspondiente
+  a la cantidad de pisos seguros en la torre.
+  %
+  Luego siguen $P$ enteros $p$ ($0 \leq p < M$) correspondientes al
+  número de cada piso accesible.
 
-  Está garantizado que siempre es posible llegar al final del camino, y que el último piso de la primera torre es seguro.
+  Se garantiza que siempre es posible completar la ruta, y que el
+  último piso de la primera torre es seguro.
 \end{inputDescription}
 
 \begin{outputDescription}
-  La salida debe contener un único entero, la cantidad mínima de cohetes necesarios para llegar hasta la última torre.
+  La salida debe contener un único entero correspondiente a la cantidad mínima
+  de cohetes necesarios para completar la ruta.
 \end{outputDescription}
 
 \begin{scoreDescription}
   \subtask{??}
-  Se probarán varios casos en que ($2 \leq N, M, 5$).
+  Se probarán varios casos en que ($2 \leq N, M \leq 5$).
   \subtask{??}
   Se probarán varios casos en que $M=2$.
   \subtask{??}
