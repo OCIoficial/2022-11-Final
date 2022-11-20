@@ -28,20 +28,55 @@
 # passed as the first argument meaning that the rest of the arguments are "shifted" in one position.
 
 [Subtask 1]
-  # Use sample data as test
-  sample ; copy statement/sample-1.in
-  sample ; copy statement/sample-2.in
+  # On the limit
+  rand ; limit.py 1 1
+  rand ; limit.py 1 5
+  rand ; limit.py 1 13
+  rand ; limit.py 1 26
+  rand ; limit.py 1 26
 
-  # Manual test case
-  manual ; copy attic/manual-1.in
-
-  # Random tests
-  rand ; random.cpp 10 100
-  rand ; random.cpp 100 1000
-
+  # First and last
+  imposs ; first_and_last.py 1 1
+  imposs ; first_and_last.py 1 5
+  imposs ; first_and_last.py 1 13
+  imposs ; first_and_last.py 1 26
+  imposs ; first_and_last.py 1 26
 
 [Subtask 2]
-  # Random tests
-  rand ; random.py 10 20 30
-  rand ; random.py 20 30 40
+  # Use sample data as test
+  sample ; copy statement/sample-1.in
+
+  # On the limit
+  rand ; limit.py 2 1
+  rand ; limit.py 2 5
+  rand ; limit.py 2 13
+  rand ; limit.py 2 26
+  rand ; limit.py 2 26
+
+  # First and last
+  imposs ; first_and_last.py 2 1
+  imposs ; first_and_last.py 2 5
+  imposs ; first_and_last.py 2 13
+  imposs ; first_and_last.py 2 26
+  imposs ; first_and_last.py 2 26
+
+[Subtask 3]
+  # Use sample data as test
+  sample ; copy statement/sample-2.in
+
+  # On the limit
+  rand ; limit.py 1000000 1
+  rand ; limit.py 200000 5
+  rand ; limit.py 76923 13
+  rand ; limit.py 76923 13
+  rand ; limit.py 38461 26
+  rand ; limit.py 38461 26
+
+  # First and last
+  imposs ; first_and_last.py 999999 1
+  imposs ; first_and_last.py 200000 5
+  imposs ; first_and_last.py 76923 13
+  imposs ; first_and_last.py 76923 13
+  imposs ; first_and_last.py 38461 26
+  imposs ; first_and_last.py 38461 26
 
