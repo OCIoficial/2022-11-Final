@@ -27,7 +27,7 @@
 # The generator should use this extra argument to generate the random seed. The extra argument is
 # passed as the first argument meaning that the rest of the arguments are "shifted" in one position.
 
-[Subtask 1]
+[Subtask 1 - validators/st1.cpp]
   # On the limit
   rand ; limit.py 1 1
   rand ; limit.py 1 5
@@ -42,7 +42,7 @@
   imposs ; first_and_last.py 1 26
   imposs ; first_and_last.py 1 26
 
-[Subtask 2]
+[Subtask 2 - validators/st3.cpp]
   # Use sample data as test
   sample ; copy statement/sample-1.in
 
@@ -60,7 +60,7 @@
   imposs ; first_and_last.py 2 26
   imposs ; first_and_last.py 2 26
 
-[Subtask 3]
+[Subtask 3 - validators/st3.cpp]
   # Use sample data as test
   sample ; copy statement/sample-2.in
 
@@ -74,7 +74,7 @@
 
   # First and last
   imposs ; first_and_last.py 999999 1
-  imposs ; first_and_last.py 200000 5
+  imposs ; first_and_last.py 199999 5
   imposs ; first_and_last.py 76923 13
   imposs ; first_and_last.py 76923 13
   imposs ; first_and_last.py 38461 26
