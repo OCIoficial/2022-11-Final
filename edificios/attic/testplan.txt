@@ -31,6 +31,8 @@
 
   sample-1 ; copy statement/sample-1.in
 
+  manual-st1 ; copy attic/manual/manual-st1.in
+
   rand-st1 ; gen_random.py 5 5
   rand-st1 ; gen_random.py 5 5
 
@@ -39,7 +41,6 @@
 
   sample-2 ; copy statement/sample-2.in
 
-  manual-st2 ; copy attic/manual/manual-st2.in
 
   rand-st2 ; gen_random.py 100 2
   rand-st2 ; gen_random.py 100 2
