@@ -67,6 +67,10 @@ int main(int argc, char *argv[]) {
     return (submission == "imposible") ? right_ans() : wrong_ans();
   }
 
+  if (submission == "imposible") {
+    return wrong_ans();
+  }
+
   vector<vector<bool>> usages(26, vector<bool>(k));
 
   istringstream iss(submission);
