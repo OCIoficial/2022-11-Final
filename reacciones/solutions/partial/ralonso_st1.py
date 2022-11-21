@@ -6,4 +6,4 @@ for i, glyph in enumerate(message):
         print("imposible")
         exit(0)
 
-print(" ".join(["1"] * len(message))
+print(" ".join(["1"] * len(message)))
