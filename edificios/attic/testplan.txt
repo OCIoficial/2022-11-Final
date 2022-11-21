@@ -27,24 +27,25 @@
 # The generator should use this extra argument to generate the random seed. The extra argument is
 # passed as the first argument meaning that the rest of the arguments are "shifted" in one position.
 
-[Subtask 1]
+[Subtask 1 - validators/st1.cpp]
 
   sample-1 ; copy statement/sample-1.in
 
+  manual-st1 ; copy attic/manual/manual-st1.in
+
   rand-st1 ; gen_random.py 5 5
   rand-st1 ; gen_random.py 5 5
 
 
-[Subtask 2]
+[Subtask 2 - validators/st2.cpp]
 
   sample-2 ; copy statement/sample-2.in
 
-  manual-st2 ; copy attic/manual/manual-st2.in
 
   rand-st2 ; gen_random.py 100 2
   rand-st2 ; gen_random.py 100 2
 
-[Subtask 3]
+[Subtask 3 - validators/st3.cpp]
 
   manual-st3-1 ; copy attic/manual/manual-st3-1.in
   manual-st3-2 ; copy attic/manual/manual-st3-2.in

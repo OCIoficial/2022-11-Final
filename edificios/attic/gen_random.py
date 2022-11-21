@@ -16,6 +16,9 @@ n = int(sys.argv[2])
 m = int(sys.argv[3])
 
 print(n, m)
-for i in range(n):
+tower = gen_tower(m-1)
+print(len(tower)+1, m-1, *tower)
+
+for i in range(n-1):
     tower = gen_tower(m)
     print(len(tower), *tower)
