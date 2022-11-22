@@ -35,21 +35,30 @@
 
   rand-st1 ; gen_random.py 5 5
   rand-st1 ; gen_random.py 5 5
+  rand-st1 ; gen_random.py 5 5
+  rand-st1 ; gen_random.py 5 5
 
 
 [Subtask 2 - validators/st2.cpp]
 
   sample-2 ; copy statement/sample-2.in
 
-
+  rand-st2 ; gen_random.py 2 2
+  rand-st2 ; gen_random.py 50 2
+  rand-st2 ; gen_random.py 80 2
   rand-st2 ; gen_random.py 100 2
   rand-st2 ; gen_random.py 100 2
 
 [Subtask 3 - validators/st3.cpp]
 
+  sample-1 ; copy statement/sample-1.in
+  sample-2 ; copy statement/sample-2.in
+
   manual-st3-1 ; copy attic/manual/manual-st3-1.in
   manual-st3-2 ; copy attic/manual/manual-st3-2.in
   manual-st3-3 ; copy attic/manual/manual-st3-2.in
 
+  rand-st3 ; gen_random.py 80 20
+  rand-st3 ; gen_random.py 50 10
   rand-st3 ; gen_random.py 100 100
   rand-st3 ; gen_random.py 100 100

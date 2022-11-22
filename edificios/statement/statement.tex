@@ -33,7 +33,7 @@
   estarán en llamas.
   %
   Como Sebastián desea salir vivo de esta, solo saltará a los pisos
-  seguros, es decir, los pisos que no están en llamas.
+  \emph{seguros}, es decir, los pisos que no están en llamas.
 
   Además de ser un excelente deportista, Sebastián es una persona muy
   preocupada por el medio ambiente, por lo que desea reducir su huella
@@ -48,7 +48,7 @@
 
 \begin{inputDescription}
   La primera línea de entrada contiene dos enteros $N$ y $M$ ($2 \leq N, M \leq 100$)
-  correspondientes respectivamente a la cantidad de torres y la cantidad de pisos.
+  correspondientes respectivamente a la cantidad de torres y la cantidad de pisos en cada torre.
 
   A continuación vienen $N$ líneas.
   %
@@ -57,8 +57,8 @@
   Cada línea comienza con un entero $P$ ($1 \leq P \leq M$) correspondiente
   a la cantidad de pisos seguros en la torre.
   %
-  Luego siguen $P$ enteros $p$ ($0 \leq p < M$) correspondientes al
-  número de cada piso accesible.
+  Luego siguen $P$ enteros distintos, todos mayores o iguales que $0$ y menores que M,
+  correspondientes a los pisos seguros en la torre.
 
   Se garantiza que siempre es posible completar la ruta, y que el
   último piso de la primera torre es seguro.
@@ -66,15 +66,15 @@
 
 \begin{outputDescription}
   La salida debe contener un único entero correspondiente a la cantidad mínima
-  de cohetes necesarios para completar la ruta.
+  de cohetes con los que es posible completar la ruta.
 \end{outputDescription}
 
 \begin{scoreDescription}
-  \subtask{??}
+  \subtask{20}
   Se probarán varios casos en que ($2 \leq N, M \leq 5$).
-  \subtask{??}
+  \subtask{20}
   Se probarán varios casos en que $M=2$.
-  \subtask{??}
+  \subtask{60}
   Se probarán varios casos sin restricciones adicionales.
 \end{scoreDescription}
 
