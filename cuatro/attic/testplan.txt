@@ -61,4 +61,6 @@
   impossible_rand ; rand.py 6 impossible
   impossible_rand ; rand.py 8 impossible
   impossible_rand ; rand.py 10 impossible
+  impossible_rand ; rand.py 10 impossible
+  impossible_rand ; rand.py 10 impossible
 
