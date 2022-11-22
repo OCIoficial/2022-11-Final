@@ -15,18 +15,21 @@
 
 \begin{document}
 \begin{problemDescription}
-David está organizando una salida a la playa con sus amigos.
+David está organizando un viaje a la playa con sus amigos.
 %
 Su ciudad puede ser representada por una grilla de $n$ filas y $m$ columnas.
 %
 Para referirnos a la celda en la fila $i$-ésima y columna $j$-ésima usamos el par
 $(i,j)$.
 %
-El viaje debe seguir un camino que parta en la esquina superior izquierda
-$(1,1)$ y termine en la esquina inferior derecha $(n,m)$.
+David comienza su viaje en la esquina superior izquierda $(1, 1)$ y debe
+moverse por la grilla siguiendo un \emph{camino} hasta alcanzar la esquina
+inferior derecha $(n, m)$.
 %
-Para que un camino sea válido, en cada movimiento solo se puede pasar a
-una celda contigua que comparta un lado.
+En un movimiento, David puede pasar de la celda actual a una celda contigua
+que comparta un lado.
+%
+El largo del camino se define como la cantidad de movimientos.
 
 Adicionalmente, cada celda tiene un color asociado.
 %
@@ -69,7 +72,7 @@ Por ejemplo, las siguientes figuras representa un posible mapa para $n=3$, $m=3$
 Cada figura muestra un camino que va desde $(1,1)$ hasta $(3,3)$.
 %
 El camino de la figura de la izquierda es agradable, pero el de la derecha
-no lo es, ya que la segunda, tercera y cuarta casilla son del mismo color.
+no lo es, ya que la segunda, tercera y cuarta celda son del mismo color.
 %
 La distancia en ambos caminos es $4$.
 
