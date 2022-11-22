@@ -29,7 +29,7 @@
 
 [Subtask 1 - validators/st1.cpp]
   
-  # Manual test case
+  # Manual test cases
   manual-st1 ; copy attic/manual_cases/st1-1.in
   manual-st1 ; copy attic/manual_cases/st1-2.in
   manual-st1 ; copy attic/manual_cases/st1-3.in
@@ -48,7 +48,7 @@
   # Use sample data as test
   sample-st2 ; copy statement/sample-2.in
 
-  # Manual test case
+  # Manual test cases
   manual-st2 ; copy attic/manual_cases/st2-1.in
   manual-st2 ; copy attic/manual_cases/st2-2.in
   manual-st2 ; copy attic/manual_cases/st2-3.in
@@ -56,18 +56,28 @@
   manual-st2 ; copy attic/manual_cases/st2-5.in
 
   # Random tests
-  rand-st2 ; gen_random.py 2 20 2
-  rand-st2 ; gen_random.py 2 30 2
-  rand-st2 ; gen_random.py 2 50 2
+  rand-st2 ; gen_random.py 2 10 2
+  rand-st2 ; gen_random.py 2 10 2
+  rand-st2 ; gen_random.py 2 10 2
   rand-st2 ; gen_random.py 2 100 2
-  rand-st2 ; gen_random.py 2 1000 2
+  rand-st2 ; gen_random.py 2 100 2
 
 [Subtask 3 - validators/st3.cpp]
 
   # Random tests
-  rand-st3 ; gen_random.py 2 20 5
-  rand-st3 ; gen_random.py 2 30 5
+  rand-st3 ; gen_random.py 2 10 10
+  rand-st3 ; gen_random.py 2 10 10
+  rand-st3 ; gen_random.py 2 10 10
+  rand-st3 ; gen_random.py 2 100 50
+  rand-st3 ; gen_random.py 2 100 50
 
+  # Manual test cases
+  manual-st3 ; copy attic/manual_cases/st3-1.in
+  manual-st3 ; copy attic/manual_cases/st3-2.in
+  manual-st3 ; copy attic/manual_cases/st3-3.in
+  manual-st3 ; copy attic/manual_cases/st3-4.in
+  manual-st3 ; copy attic/manual_cases/st3-5.in
+  manual-st3 ; copy attic/manual_cases/st3-6.in
 
 [Subtask 4 - validators/st4.cpp]
 
@@ -75,5 +85,20 @@
   sample-st4 ; copy statement/sample-1.in
 
   # Random tests
-  rand-st4 ; gen_random.py 20 20 5
-  rand-st4 ; gen_random.py 20 30 5
+  rand-st4 ; gen_random.py 100 100 2
+  rand-st4 ; gen_random.py 100 100 3
+  rand-st4 ; gen_random.py 100 100 3
+  rand-st4 ; gen_random.py 100 100 3
+  rand-st4 ; gen_random.py 100 100 3
+  rand-st4 ; gen_random.py 100 100 4
+  rand-st4 ; gen_random.py 100 100 4
+  rand-st4 ; gen_random.py 100 100 4
+  rand-st4 ; gen_random.py 100 100 10
+  rand-st4 ; gen_random.py 100 100 100
+
+  # Manual test cases
+  manual-st4 ; copy attic/manual_cases/st4-1.in
+  manual-st4 ; copy attic/manual_cases/st4-2.in
+  manual-st4 ; copy attic/manual_cases/st4-3.in
+  manual-st4 ; copy attic/manual_cases/st4-4.in
+  manual-st4 ; copy attic/manual_cases/st4-5.in
