@@ -49,7 +49,8 @@ celda $(i_2,j_2)$ este solo puede ser agradable si $C_{(i_1,j_1)} \neq C_{(i_2,j
 % 3\ 3\ 2\\
 % 3\ 3\ 1
 % \end{gather*}
-Por ejemplo, las siguientes figuras representan una posible grilla para $n=3$, $m=3$ y $k=3$.
+Por ejemplo, las siguientes figuras representan un posible mapa de la ciudad para
+una grilla con $n=3$, $m=3$ y $k=3$.
 %
 El número en cada celda corresponde a su color.
 \begin{figure}[!h]
@@ -105,8 +106,10 @@ El $j$-ésimo entero de la $i$-ésima línea representa a $C_{(i,j)}$, el color 
 \end{inputDescription}
 
 \begin{outputDescription}
-  La salida debe contener el largo del camino agradable más corto,
-  si este no existe debes imprimir -1.
+  La salida debe contener el largo del camino agradable más corto entre la celda (1, 1)
+  y la celda $(n, m)$.
+  %
+  Si este camino no existe debes imprimir -1.
 
 \end{outputDescription}
 
