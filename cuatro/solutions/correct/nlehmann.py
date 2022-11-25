@@ -24,8 +24,8 @@ def check(grid, N) -> bool:
             return False
         return check_streaks(streaksX)
 
-    # If the are no streaks there's no winner, so we must have a tie
-    return all(p != '.' for row in grid for p in row)
+    # If the are no streaks then we must have a tie
+    return all(p != '.' for row in grid for p in row) and 0 <= os - xs <= 1
 
 
 def has_streaks(streaks: Dict[str, List[Streak]]) -> bool:
