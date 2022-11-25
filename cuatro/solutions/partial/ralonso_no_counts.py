@@ -65,23 +65,10 @@ p2 = sum(row.count('X') for row in grid)
 
 p1_fours = get_fours(grid, 'O')
 p2_fours = get_fours(grid, 'X')
-# print("p1_fours", p1_fours, "p2_fours", p2_fours)
 
-if p1 - 1 == p2:
-    if p2_fours > 0:
-        impossible()
-    if p1_fours > 1:
-        impossible()
-    if p1_fours == 0 and p1 + p2 < n * n:
-        impossible()
-    possible()
-elif p1 == p2:
-    if p1_fours > 0:
-        impossible()
-    if p2_fours > 1:
-        impossible()
-    if p2_fours == 0 and p1 + p2 < n * n:
-        impossible()
-    possible()
-else:
+if p1_fours + p2_fours > 1:
     impossible()
+if p1_fours == 0 and p2_fours == 0 and p1 + p2 < n * n:
+    impossible()
+else:
+    possible()
