@@ -32,13 +32,6 @@ def has_streaks(streaks: Dict[str, List[Streak]]) -> bool:
     return len(streaks['c']) > 0 or len(streaks['r']) > 0
 
 
-def check_move_count(grid):
-    os = len([p for row in grid for p in row if p == 'O'])
-    xs = len([p for row in grid for p in row if p == 'X'])
-    # `O` plays first so we could have one more `O` than `X`s
-    return 0 <= os - xs <= 1
-
-
 def find_streaks(grid, N, player) -> Dict[str, List[Streak]]:
     # yapf: disable
     pos_dirs = ([((i, 0), (0, 1), 'c') for i in range(N)] +
