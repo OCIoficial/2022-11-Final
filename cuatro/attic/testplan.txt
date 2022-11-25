@@ -31,6 +31,8 @@
 
   # POSSIBLE
 
+  possible_sample ; copy statement/sample-1.in
+
   possible_ai_tie ; ai.py 5 tie
   possible_ai_tie ; ai.py 4 tie
 
@@ -45,9 +47,11 @@
   possible_7_in_line_col; copy attic/manual/possible/7_in_line_col.txt
   possible_row_and_col ; copy attic/manual/possible/row_and_col_1.txt
   possible_row_and_col ; copy attic/manual/possible/row_and_col_2.txt
-  possible_row_and_col ; copy attic/manual/possible/row_and_col_3.txt
+  possible_row_and_col_max ; copy attic/manual/possible/row_and_col_max.txt
 
   # IMPOSSIBLE
+
+  impossible_sample ; copy statement/sample-2.in
 
   impossible_8_in_line ; copy attic/manual/impossible/8_in_line.txt
   impossible_multi_4_in_line ; copy attic/manual/impossible/multi_4_in_line.txt
@@ -56,11 +60,11 @@
   impossible_only_o ; copy attic/manual/impossible/only_o.txt
   impossible_only_x ; copy attic/manual/impossible/only_x.txt
   impossible_x_win_too_early ; copy attic/manual/impossible/x_win_too_early.txt
+  impossible_row_and_col ; copy attic/manual/impossible/row_and_col.txt
 
   impossible_rand ; rand.py 4 impossible
   impossible_rand ; rand.py 6 impossible
   impossible_rand ; rand.py 8 impossible
-  impossible_rand ; rand.py 10 impossible
   impossible_rand ; rand.py 10 impossible
   impossible_rand ; rand.py 10 impossible
 

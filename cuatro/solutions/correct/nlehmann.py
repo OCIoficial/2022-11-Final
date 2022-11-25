@@ -83,8 +83,9 @@ def check_streaks(streaks: Dict[str, List[Streak]]) -> bool:
         (i2, j2) = streak2.pos
         for _ in range(streak1.len):
             if j1 == j2 and i2 <= i1 <= i2 + streak2.len:
-                return True
+                return streak1.len - j1 <= 4
             j1 += 1
+
     # Otherwise is invalid
     return False
 

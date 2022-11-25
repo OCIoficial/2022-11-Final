@@ -3,7 +3,7 @@
 ..O..X..
 X.O..X..
 ..OX....
-.OOOOOOO
+.OOOOOO.
 X.OX..X.
 ..O.X...
 X.O....X
