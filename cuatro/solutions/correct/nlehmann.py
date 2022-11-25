@@ -74,17 +74,15 @@ def check_streaks(streaks: Dict[str, List[Streak]]) -> bool:
         return streaks['r'][0].len <= 7
 
     # If we complete one column and one row in the last move then they must intersect
+    # and they cannot be too long
     if len(streaks['c']) == 1 and len(streaks['r']) == 1:
         streak1 = streaks['c'][0]
         streak2 = streaks['r'][0]
-        if streak1.len > 7 or streak2.len > 7:
-            return False
         (i1, j1) = streak1.pos
         (i2, j2) = streak2.pos
-        for _ in range(streak1.len):
-            if j1 == j2 and i2 <= i1 <= i2 + streak2.len:
-                return streak1.len - j1 <= 4
-            j1 += 1
+        for k in range(streak1.len):
+            if j1 + k == j2 and i2 <= i1 <= i2 + streak2.len:
+                return streak1.len - k <= 4 and k < 4 and i1 - i2 < 4 and i2 + streak2.len - i1 <= 4
 
     # Otherwise is invalid
     return False

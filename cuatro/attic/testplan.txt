@@ -62,13 +62,13 @@
   impossible_only_o ; copy attic/manual/impossible/only_o.txt
   impossible_only_x ; copy attic/manual/impossible/only_x.txt
   impossible_x_win_too_early ; copy attic/manual/impossible/x_win_too_early.txt
-  impossible_row_and_col ; copy attic/manual/impossible/row_and_col.txt
+  impossible_row_and_col ; copy attic/manual/impossible/row_and_col_1.txt
+  impossible_row_and_col ; copy attic/manual/impossible/row_and_col_2.txt
+  impossible_row_and_col ; copy attic/manual/impossible/row_and_col_3.txt
+  impossible_row_and_col ; copy attic/manual/impossible/row_and_col_4.txt
   impossible_both_win ; copy attic/manual/impossible/both_win.txt
   impossible_wrong_move_number_tie ; copy attic/manual/impossible/wrong_move_number_tie.txt
 
-  impossible_rand ; rand.py 4 impossible
   impossible_rand ; rand.py 6 impossible
-  impossible_rand ; rand.py 8 impossible
-  impossible_rand ; rand.py 10 impossible
   impossible_rand ; rand.py 10 impossible
 
