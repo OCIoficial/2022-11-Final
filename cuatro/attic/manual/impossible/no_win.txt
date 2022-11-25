@@ -1,6 +1,6 @@
 5
-X..O.
-O..OO
-X....
-O..X.
-X.X..
+X.XO.
+O.XOO
+X.O.O
+OXOXX
+X.X.O
