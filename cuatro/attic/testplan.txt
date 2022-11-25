@@ -38,7 +38,6 @@
   possible_ai_tie ; ai.py 5 tie
 
   possible_ai_win ; ai.py 5 win
-  possible_ai_win ; ai.py 5 win
   possible_ai_win ; ai.py 6 win
   possible_ai_win ; ai.py 7 win
   possible_ai_win ; ai.py 8 win
@@ -49,7 +48,8 @@
   possible_7_in_line_col; copy attic/manual/possible/7_in_line_col.txt
   possible_row_and_col ; copy attic/manual/possible/row_and_col_1.txt
   possible_row_and_col ; copy attic/manual/possible/row_and_col_2.txt
-  possible_row_and_col_max ; copy attic/manual/possible/row_and_col_max.txt
+  possible_row_and_col_max_o ; copy attic/manual/possible/row_and_col_max_o.txt
+  possible_row_and_col_max_x ; copy attic/manual/possible/row_and_col_max_x.txt
 
   # IMPOSSIBLE
 
