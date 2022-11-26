@@ -78,6 +78,9 @@ int main(int argc, char *argv[]) {
 
   for (int i = 0; i < n; ++i) {
     iss >> color;
+    if (iss.fail() || color < 1 || color > k) {
+      return wrong_ans();
+    }
     if (usages[message[i] - 'a'][color - 1]) {
       return wrong_ans();
     }
