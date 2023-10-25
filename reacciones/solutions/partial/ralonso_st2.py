@@ -1,3 +1,4 @@
+# @ocimatic should-pass=[st1, st2]
 n, k = (int(i) for i in input().split())
 message = input()
 

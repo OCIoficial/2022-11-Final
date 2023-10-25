@@ -1,3 +1,4 @@
+# @ocimatic should-pass=[st1]
 _ = input()
 message = input()
 
